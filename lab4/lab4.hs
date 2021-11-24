@@ -56,8 +56,8 @@ getFigures str array
   | str == "Text" = getLabels array
   | otherwise = []
 
---Додаткове завдання
---перемiщення фiгури на вказаний вектор.
+--Додаткове завдання:
+--Перемiщення фiгури на вказаний вектор.
 move :: Figure -> Int -> Int -> Figure
 move (Rect x1 y1 x2 y2) v1 v2 = Rect (x1 + v1) (y1 + v2) (x2 + v1) (y2 + v2)
 move (Circle x y r) v1 v2 = Circle (x + v1) (y + v2) r
